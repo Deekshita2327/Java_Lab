@@ -1,0 +1,28 @@
+package Com.sample;
+class gp{
+	gp(){
+		System.out.println("gp");
+	}
+}
+class p extends gp{
+	p(){
+		super();
+		System.out.println("p");
+	}
+}
+class c extends p{
+	c(){
+		super();
+		System.out.println("c");
+	}
+}
+public class superkeyword {
+	public static void main(String[] args) {
+		c a = new c();
+	}
+
+}
+OUTPUT: 
+gp
+p
+c
