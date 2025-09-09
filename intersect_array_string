@@ -1,0 +1,30 @@
+package Com.sample;
+
+public class union_String_array {
+	public static void main(String[] args) {
+		String [] a= {"orange","apple","grape"};
+		String [] b= {"apple","grape","green"};
+		int n=a.length;
+		int n1=b.length;
+		String [] intersect= new String[n];
+		int k=0;
+		for(int i=0;i<n;i++) {
+			for(int j=0;j<n1;j++) {
+				if(a[i].equalsIgnoreCase(b[j])) {
+					intersect[k]=a[i];
+					k++;
+				}
+				else {
+					continue;
+				}
+			}
+		}
+		for(int i=0;i<n;i++) {
+				System.out.println(intersect[i]);
+		}
+
+}}
+output:
+apple
+grape
+null
