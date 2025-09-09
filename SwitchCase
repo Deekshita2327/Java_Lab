@@ -1,0 +1,38 @@
+package Com.sample;
+import java.util.Scanner;
+public class switchcase {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the two numbers :");
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		System.out.println("select your operation : 1.add ,2.sub,3.multiply,4.division");
+		int c=sc.nextInt();
+		switch(c){
+		case 1:
+			System.out.println("addition :"+(a+b));
+			break;
+		case 2:
+			System.out.println("subtraction :"+(a-b));
+			break;
+		case 3:
+			int mul=a*b;
+			System.out.println("multiply :"+mul);
+			break;
+		case 4:
+			System.out.println("division :"+(a/b));
+			break;
+		default:
+			System.out.println("wrong input");
+		}
+	
+	}
+
+}
+output :
+enter the two numbers :
+6
+7
+select your operation : 1.add ,2.sub,3.multiply,4.division
+3
+multiply :42
